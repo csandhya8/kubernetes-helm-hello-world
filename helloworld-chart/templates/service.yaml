@@ -14,6 +14,7 @@ spec:
       targetPort: {{ .Values.service.internalPort }}
       protocol: TCP
       name: {{ .Values.service.name }}
+  type: LoadBalancer
   selector:
     app: {{ template "helloworld-chart.name" . }}
     release: {{ .Release.Name }}
