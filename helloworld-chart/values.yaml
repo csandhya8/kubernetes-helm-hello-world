@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: autodeploy.azurecr.io/csandhya8/kubernetes-helm-hello-world
   tag: 112
-  pullPolicy: autodeploy
+  pullPolicy: always
 service:
   name: nginx
   type: ClusterIP
