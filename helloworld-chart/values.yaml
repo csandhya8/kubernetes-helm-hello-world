@@ -4,7 +4,7 @@
 replicaCount: 1
 image:
   repository: autodeploy.azurecr.io/csandhya8/kubernetes-helm-hello-world
-  tag: 112
+  tag: 115
   pullPolicy: IfNotPresent
 service:
   name: nginx
